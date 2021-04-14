@@ -13,10 +13,8 @@ Skills made with the old editor should still mantain full functionality, but the
 I accept donations via PayPal, which I'll be using for the development of my MMORPG Minecraft server: Craftec
 * https://www.paypal.com/paypalme/Sentropic
 
-## Craftec:
-* Discord | https://discord.gg/tr7eRaf
-* Twitter | https://twitter.com/CraftecCR
-* Instagram | https://www.instagram.com/craftec.cr/
+## RPGPRO:
+[![Discord](https://img.shields.io/badge/discord-join_chat-7289da.svg)](https://discord.com/invite/RhTyRReKyP)  
 
 ## Useful links
 * Original SkillAPI Wiki    | https://github.com/Eniripsa96/SkillAPI/wiki
