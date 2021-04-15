@@ -7,11 +7,8 @@ If you want to report a bug or make a suggestion, feel free to create an issue o
 ## New dynamic editor
 If you use this version, I strongly recommend using the mantained Dynamic editor.
 Skills made with the old editor should still mantain full functionality, but the new one has new stuff.
-* New, mantained editor: http://sentropic.github.io/SkillAPI-s/
+* New, mantained editor: https://skillapi.herosteve.com/
 
-## Donations
-I accept donations via PayPal, which I'll be using for the development of my MMORPG Minecraft server: Craftec
-* https://www.paypal.com/paypalme/Sentropic
 
 ## RPGPRO:
 [![Discord](https://img.shields.io/badge/discord-join_chat-7289da.svg)](https://discord.com/invite/RhTyRReKyP)  
