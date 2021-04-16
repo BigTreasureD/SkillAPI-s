@@ -20,3 +20,5 @@ Skills made with the old editor should still mantain full functionality, but the
 * Old Dynamic Editor   | http://eniripsa96.github.io/SkillAPI/
 * Examples Database | https://skillexamples.herokuapp.com/
 * G.E.A.R.S. Discord server        | https://discord.gg/KX2ygZJ
+
+[![](https://jitpack.io/v/BigTreasureD/SkillAPI-s.svg)](https://jitpack.io/#BigTreasureD/SkillAPI-s)
