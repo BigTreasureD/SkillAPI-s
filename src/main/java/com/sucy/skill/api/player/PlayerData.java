@@ -457,6 +457,13 @@ public class PlayerData {
     }
 
     /**
+     * Take the player attribute points
+     *
+     * @param amount of attribute points
+     */
+    public void takeAttribPoints(int amount) { attribPoints -= amount; }
+
+    /**
      * Sets the current amount of attribute points
      *
      * @param amount amount of points to have
@@ -1444,7 +1451,7 @@ public class PlayerData {
      * @return current player stamina
      */
     public double getStamina() {
-        return mana;
+        return stamina;
     }
 
     /**
