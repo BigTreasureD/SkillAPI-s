@@ -2,7 +2,10 @@ package com.sucy.skill.hook;
 
 import io.lumine.xikage.mythicmobs.MythicMobs;
 import org.bukkit.Location;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
+
+import java.util.UUID;
 
 /**
  * SkillAPI © 2017
@@ -22,10 +25,13 @@ public class MythicMobsHook {
     public static boolean isMonster(final LivingEntity target) {
         return MythicMobs.inst().getAPIHelper().isMythicMob(target);
     }
-    public static void skills(final  LivingEntity target,  final String skills) {
+    public static void skills(final LivingEntity target,  final String skills) {
         MythicMobs.inst().getAPIHelper().castSkill(target, skills);
     }
     public static void summonMobs(final String mobName, final Location location, final int level){
         MythicMobs.inst().getMobManager().spawnMob(mobName,location,level);
+    }
+    public static void owner(final UUID target, final LivingEntity mob) {
+        MythicMobs.inst().getAPIHelper().getMythicMobInstance(mob).setOwner(target);
     }
 }

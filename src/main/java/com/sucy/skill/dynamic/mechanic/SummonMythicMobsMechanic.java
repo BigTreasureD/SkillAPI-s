@@ -22,6 +22,7 @@ public class SummonMythicMobsMechanic extends MechanicComponent {
     private static final String SKILLS = "skills";
     public static final  String SKILL_META = "sapi_mob_skills";
     private static final String SECONDS    = "seconds";
+    private static final String OWNER      = "owner";
 
     private final Map<Integer, RemoveTask> tasks = new HashMap<>();
 
@@ -45,6 +46,7 @@ public class SummonMythicMobsMechanic extends MechanicComponent {
         int amount = settings.getInt(AMOUNT,1);
         double seconds = parseValues(player, SECONDS, level, 10.0);
         int ticks = (int) (seconds * 20);
+        String mobOwner = settings.getString(OWNER, "true").toLowerCase();
 
         List<String> skills = settings.getStringList(SKILLS);
 
@@ -66,6 +68,10 @@ public class SummonMythicMobsMechanic extends MechanicComponent {
                             if (skill instanceof PassiveSkill) {
                                 ((PassiveSkill) skill).initialize(mob, level);
                             }
+                        }
+                        if (mobOwner.equals(true)){
+                            UUID uuid = player.getUniqueId();
+                            MythicMobsHook.owner(uuid, mob);
                         }
                         SkillAPI.setMeta(mob, SKILL_META, skills);
                         SkillAPI.setMeta(mob, LEVEL, level);
