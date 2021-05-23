@@ -1,12 +1,10 @@
 package com.sucy.skill.dynamic.mechanic;
 
 import ac.github.originskill.internal.ItemSkill;
-import ac.github.originskill.internal.holder.EventHolder;
 import ac.github.originskill.internal.holder.impl.CommandHolder;
 import com.sucy.skill.hook.OriginSkillHook;
 import com.sucy.skill.hook.PluginChecker;
 import com.sucy.skill.log.Logger;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.LivingEntity;
 
 import java.util.List;
