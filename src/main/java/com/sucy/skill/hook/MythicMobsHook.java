@@ -34,4 +34,7 @@ public class MythicMobsHook {
     public static void owner(final UUID target, final LivingEntity mob) {
         MythicMobs.inst().getAPIHelper().getMythicMobInstance(mob).setOwner(target);
     }
+    public static boolean isRightFaction(final LivingEntity target, final String faction) {
+        return MythicMobs.inst().getAPIHelper().getMythicMobInstance(target).getFaction().equals(faction);
+    }
 }
